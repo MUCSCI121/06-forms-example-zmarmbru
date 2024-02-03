@@ -1,8 +1,156 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body></body>
+
+<head>
+  <title>Html Form Elements</title>
+</head>
+
+<body>
+  <form>
+    <div>
+      <h1>Input</h1>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">MDN Reference</a>
+      <br />
+      <div>
+        <label for="inputCheckbox">Checkbox: </label>
+        <input id="inputCheckbox" name="inputCheckbox"  type="checkbox">Check Please</input>
+      </div>
+      <br />
+      <div><label for="inputColor">Color: </label>
+        <input id="inputColor"  name="colorSelector" type="color" value="#ff2200"></input>
+      </div>
+      <br />
+      <div><label for="inputDate">Date: </label>
+        <input id="inputDate"  name="dateSelector" type="date"></input>
+      </div>
+      <br />
+      <div>
+        <label for="inputDatetime">Datetime Local: </label>
+        <input id="inputDatetime" name="dateTimeSelector"  type="datetime-local"></input>
+      </div>
+      <br />
+      <div><label for="inputEmail">Email: </label>
+        <input id="inputEmail"  name="emailAddress" type="email" value="john@doe.com"></input>
+      </div>
+      <br />
+      <div><label for="inputFile">File: </label>
+        <input id="inputFile"  name="fileSelector" type="file"></input>
+      </div>
+      <br />
+      <div>
+        <label for="inputHidden">Hidden: </label>
+        <input id="inputHidden"  name="hiddenInputData" type="hidden" value="I am not seen"></input>
+      </div>
+      <br />
+      <div>
+        <label for="inputImage">Image: </label>
+        <input id="inputImage"  name="imageButton" type="image" src="assets/small-button-th.png" alt="submit"
+          title="A button that has a picture for its display"></input>
+      </div>
+      <br />
+      <div><label for="inputMonth">Month: </label>
+        <input id="inputMonth"  name="inputMonth" type="month"></input>
+      </div>
+      <br />
+      <div><label for="inputNumber">Number: </label>
+        <input id="inputNumber"  name="numberInput" type="number"></input>
+      </div>
+      <br />
+      <div>
+        <label for="inputPassword">Password: </label>
+        <input id="inputPassword"  name="obfuscatedPassword" type="password"></input>
+      </div>
+      <br />
+      <div>
+        Radio: <input type="radio" name="color" value="red" id="radioRed" />
+        <label for="radioRed">Red</label>
+        |
+        <input type="radio" name="color" value="blue" id="radioBlue" />
+        <label for="radioBlue">Blue</label>
+        |
+        <input type="radio" name="color" value="green" id="radioGreen" />
+        <label for="radioGreen">Green</label>
+      </div>
+      <br />
+      <div>
+        <label for="inputRange">Range: </label>
+        <input id="inputRange"  name="rangeSelector" type="range" value="75"></input>
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="inputSearch">Search: </label>
+        <input id="inputSearch" name="searchSection"  type="search"></input>
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="inputTel">Tel: </label>
+        <input id="inputTel"  name="telephoneNumber" type="tel"></input>
+      </div>
+      <br />
+      <div><label for="inputText">Text: </label>
+        <input id="inputText"  name="textInput" type="text"></input>
+      </div>
+      <br />
+      <div>
+        <label for="inputTime">Time: </label>
+        <input id="inputTime"  name="timeSelector" type="time"></input>
+      </div>
+      <br />
+      <div>
+        <label for="inputUrl">URL: </label>
+        <input id="inputUrl"  name="urlInput" type="url"></input>
+      </div>
+      <br />
+      <div>
+        <label for="inputWeek">Week: </label>
+        <input id="inputWeek"  name="weekInput" type="week"></input>
+      </div>
+      <br />
+    </div>
+
+    <hr>
+    <h1>Textarea</h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">MDN Reference</a>
+    <div>
+      <label for="multitextarea">Textarea: </label>
+      <textarea id="multitextarea" cols="20" rows="4" name="textAreaInput" >
+Hello multi-line area that I can write all sorts of text!
+    </textarea>
+    </div>
+
+    <hr>
+    <h1>Select</h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank">MDN Reference</a>
+    <div>
+      <label for="singleselect">Select: </label>
+      <select id="singleselect" name="weatherSelector">
+        <option>Sunny</option>
+        <option>Cloudy</option>
+        <option>Rainy</option>
+        <option>Snowy</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    
+    <hr>
+    <h1>Button</h1>
+    <div>
+    <label for="button">Regular Button</label>
+    <button id="button" name="regularButton" type="button">Plain Button</button>
+    </div>
+    <div>
+    <label for="resetButton">Regular Button</label>
+    <button id="resetButton" name="buttonReset" type="reset">Reset Button</button>
+    </div>
+    <div>
+    <label for="submitButton">Regular Button</label>
+    <button id="submitButton" name="buttonSubmit" type="submit">Submit Button</button>
+    </div>
+    
+  </form>
+</body>
+
 </html>
